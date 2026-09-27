@@ -1,0 +1,16 @@
+{
+  "name":"DD SKIN",
+  "short_name":"DD SKIN",
+  "description":"DD SKIN — Le rituel de beauté de votre peau.",
+  "id":"/",
+  "start_url":"/",
+  "scope":"/",
+  "display":"standalone",
+  "orientation":"portrait",
+  "background_color":"#080808",
+  "theme_color":"#080808",
+  "icons":[
+    {"src":"assets/ddskin-logo.jpeg","sizes":"1080x1080","type":"image/jpeg","purpose":"any"},
+    {"src":"assets/ddskin-logo.jpeg","sizes":"1080x1080","type":"image/jpeg","purpose":"maskable"}
+  ]
+}
