@@ -31,7 +31,7 @@
 .offers-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .offer-card{background:#fffaf3;border:1px solid #eadfce;border-radius:24px;overflow:hidden;box-shadow:0 16px 42px rgba(43,30,16,.08);display:flex;flex-direction:column}
 .offer-visual{aspect-ratio:1/1;width:100%;background-repeat:no-repeat;background-color:#f4e2d0}
-.sprite{background-image:url('assets/ddskin-offers-sprite.jpg');background-size:400% 400%;background-repeat:no-repeat}
+.sprite{background-image:url('assets/ddskin-offers-sprite.jpg?v=2');background-size:400% 400%;background-repeat:no-repeat}
 .sp-gamme-clair{background-position:0% 0%}.sp-mini-clair{background-position:33.333% 0%}.sp-detail-clair{background-position:66.667% 0%}.sp-detail-mini-clair{background-position:100% 0%}
 .sp-gamme-marron{background-position:0% 33.333%}.sp-mini-marron{background-position:33.333% 33.333%}.sp-detail-marron{background-position:66.667% 33.333%}.sp-detail-mini-marron{background-position:100% 33.333%}
 .sp-gamme-noir{background-position:0% 66.667%}.sp-detail-noir{background-position:33.333% 66.667%}.sp-mini-noir{background-position:66.667% 66.667%}.sp-detail-mini-noir{background-position:100% 66.667%}
@@ -68,7 +68,7 @@
 .individual-grid{width:min(1180px,100%);margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:stretch}
 .individual-card{background:#fff;border:1px solid #eadfce;border-radius:22px;overflow:hidden;box-shadow:0 14px 36px rgba(43,30,16,.07);display:flex;flex-direction:column;min-width:0}
 .individual-photo{aspect-ratio:1/1;width:100%;background-color:#f4e2d0;background-repeat:no-repeat}
-.individual-sprite{background-image:url('assets/ddskin-individual-sprite.jpg');background-size:200% 200%}
+.individual-sprite{background-image:url('assets/ddskin-individual-sprite.jpg?v=2');background-size:200% 200%}
 .individual-huile{background-position:0% 0%}.individual-gommage{background-position:100% 0%}.individual-lait{background-position:0% 100%}.individual-creme{background-position:100% 100%}
 .individual-copy{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1;text-align:center}
 .individual-copy h3{font-size:28px;line-height:1.05}.individual-copy p{font-size:14px;line-height:1.55;color:var(--muted);margin:0}
