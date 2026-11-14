@@ -89,3 +89,18 @@
 /* Images produits individuelles : fichiers directs, pas de sprite */
 .individual-photo{display:flex;align-items:center;justify-content:center;overflow:hidden;background:#f4e2d0}
 .individual-photo>img{position:static!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:cover!important;left:auto!important;top:auto!important}
+
+/* Grille offres équilibrée : le Kit Visage est intégré aux autres cartes */
+@media(min-width:1101px){
+  .offers-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+  .offer-kit{grid-column:auto;width:auto;justify-self:stretch}
+  .offer-kit .offer-visual{aspect-ratio:1/1}
+}
+@media(min-width:561px) and (max-width:1100px){
+  .offers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .offer-kit{grid-column:auto;width:auto;justify-self:stretch}
+  .offer-kit .offer-visual{aspect-ratio:1/1}
+}
+@media(max-width:560px){
+  .offer-kit{grid-column:auto;width:100%;max-width:none;justify-self:stretch}
+}
