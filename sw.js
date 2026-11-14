@@ -1,4 +1,4 @@
-const CACHE='ddskin-v4';
+const CACHE='ddskin-v5';
 const CORE=[
   '/',
   '/index.html',
