@@ -47,3 +47,17 @@
 .offer-close{position:absolute;right:14px;top:10px;z-index:2;width:42px;height:42px;border:0;border-radius:50%;background:rgba(0,0,0,.72);color:#fff;font-size:28px;cursor:pointer}
 @media(max-width:900px){.offers-grid{grid-template-columns:1fr 1fr}.offer-kit{grid-column:span 2}.offer-panel{grid-template-columns:1fr}.offer-modal-visual{min-height:420px}}
 @media(max-width:560px){.offers-grid{grid-template-columns:1fr}.offer-kit{grid-column:span 1}.offer-kit .offer-visual{aspect-ratio:1/1}.offer-modal-visual{min-height:300px}.offer-modal-copy{padding:24px}.offer-modal-copy h3{font-size:34px}}
+
+/* Réorganisation accueil : nouveautés avant les anciennes gammes */
+.new-offers{padding-top:clamp(52px,7vw,88px);padding-bottom:clamp(52px,7vw,88px)}
+.offer-kit{grid-column:1/-1;width:min(100%,440px);justify-self:center}
+.offer-kit .offer-visual{aspect-ratio:1/1;background-size:400% 400%}
+.offer-kit .offer-body{padding:20px}
+.offer-kit .offer-body h3{font-size:32px}
+@media(max-width:900px){
+  .offer-kit{grid-column:1/-1;width:min(100%,420px)}
+}
+@media(max-width:560px){
+  .offer-kit{grid-column:1;width:100%;max-width:400px;justify-self:center}
+  .offer-kit .offer-visual{aspect-ratio:1/1}
+}
