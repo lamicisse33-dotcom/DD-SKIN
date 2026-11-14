@@ -130,3 +130,66 @@
   .individual-grid{width:min(380px,100%);gap:16px}
   .individual-card{flex-basis:100%;width:100%;max-width:380px}
 }
+
+/* En-tête premium DD SKIN inspiré de la maquette fournie */
+.site-header-lux{
+  position:sticky;top:0;z-index:60;
+  min-height:92px;
+  padding:0 clamp(24px,5vw,88px);
+  background:#070707;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:42px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.brand-lux img{
+  width:132px;height:78px;object-fit:contain;border-radius:0;
+}
+.nav-lux{
+  display:flex!important;
+  justify-content:center;align-items:center;
+  gap:clamp(24px,3vw,48px);
+  color:#f5f1ea;
+  font-size:15px;
+  white-space:nowrap;
+}
+.nav-lux a{
+  position:relative;
+  padding:34px 0 29px;
+  transition:color .2s ease;
+}
+.nav-lux a:hover,.nav-lux a.active{color:#f1c766}
+.nav-lux a.active:after{
+  content:"";position:absolute;left:0;right:0;bottom:18px;height:2px;background:#f1c766;
+}
+.chev{font-size:15px;margin-left:4px}
+.header-icons{display:flex;align-items:center;gap:18px}
+.icon-btn{
+  width:34px;height:34px;display:grid;place-items:center;position:relative;color:#fff;
+}
+.icon-btn svg{width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cart-count{
+  position:absolute;right:-5px;top:-6px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;
+  display:grid;place-items:center;background:#f0b329;color:#111;font-size:11px;font-weight:800;
+}
+.hero-photo-only{min-height:0!important;background:#e8b089!important}
+.hero-photo-only>img{
+  position:static!important;width:100%!important;height:auto!important;display:block!important;
+  object-fit:cover!important;object-position:center!important;
+}
+.hero-photo-only:after{display:none!important}
+@media(max-width:1050px){
+  .site-header-lux{grid-template-columns:auto 1fr;gap:18px;min-height:78px;padding:0 18px}
+  .brand-lux img{width:98px;height:66px}
+  .nav-lux{display:none!important}
+  .header-icons{justify-self:end}
+}
+@media(max-width:560px){
+  .site-header-lux{min-height:70px;padding:0 12px}
+  .brand-lux img{width:84px;height:58px}
+  .header-icons{gap:12px}
+  .icon-btn{width:30px;height:30px}
+  .icon-btn svg{width:24px;height:24px}
+  .hero-photo-only>img{min-height:220px;object-fit:cover!important;object-position:center center!important}
+}
