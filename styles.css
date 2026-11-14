@@ -258,3 +258,9 @@
     width:min(760px,100%)!important;
   }
 }
+
+/* Vérification gommages : garder les deux gommages côte à côte sur desktop */
+@media(min-width:1181px){
+  .individual-grid{display:grid;grid-template-columns:repeat(5,minmax(0,250px));justify-content:center}
+  .individual-card{width:auto;max-width:250px}
+}
