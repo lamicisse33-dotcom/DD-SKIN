@@ -104,3 +104,29 @@
 @media(max-width:560px){
   .offer-kit{grid-column:auto;width:100%;max-width:none;justify-self:stretch}
 }
+
+/* 5 soins individuels : tailles homogènes et lignes toujours centrées */
+.individual-grid{
+  width:min(1320px,100%);
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:stretch;
+  gap:18px;
+}
+.individual-card{
+  flex:0 1 calc((100% - 72px)/5);
+  width:calc((100% - 72px)/5);
+  max-width:250px;
+}
+@media(max-width:1180px){
+  .individual-card{flex-basis:calc((100% - 36px)/3);width:calc((100% - 36px)/3);max-width:320px}
+}
+@media(max-width:760px){
+  .individual-card{flex-basis:calc((100% - 18px)/2);width:calc((100% - 18px)/2);max-width:340px}
+}
+@media(max-width:560px){
+  .individual-grid{width:min(380px,100%);gap:16px}
+  .individual-card{flex-basis:100%;width:100%;max-width:380px}
+}
