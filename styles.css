@@ -25,3 +25,25 @@
 .hero.hero-approved>img{position:static;width:100%;height:auto;object-fit:contain}
 .hero.hero-approved:after{display:none}
 @media(max-width:900px){.hero.hero-approved{min-height:0}.hero.hero-approved>img{height:auto}}
+
+/* Nouvelles offres DD SKIN — ajoutées sans déplacer l'existant */
+.new-offers{background:#fff}
+.offers-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.offer-card{background:#fffaf3;border:1px solid #eadfce;border-radius:24px;overflow:hidden;box-shadow:0 16px 42px rgba(43,30,16,.08);display:flex;flex-direction:column}
+.offer-visual{aspect-ratio:1/1;width:100%;background-repeat:no-repeat;background-color:#f4e2d0}
+.sprite{background-image:url('assets/ddskin-offers-sprite.jpg');background-size:400% 400%;background-repeat:no-repeat}
+.sp-gamme-clair{background-position:0% 0%}.sp-mini-clair{background-position:33.333% 0%}.sp-detail-clair{background-position:66.667% 0%}.sp-detail-mini-clair{background-position:100% 0%}
+.sp-gamme-marron{background-position:0% 33.333%}.sp-mini-marron{background-position:33.333% 33.333%}.sp-detail-marron{background-position:66.667% 33.333%}.sp-detail-mini-marron{background-position:100% 33.333%}
+.sp-gamme-noir{background-position:0% 66.667%}.sp-detail-noir{background-position:33.333% 66.667%}.sp-mini-noir{background-position:66.667% 66.667%}.sp-detail-mini-noir{background-position:100% 66.667%}
+.sp-kit-visage{background-position:0% 100%}
+.offer-body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.offer-body h3{font-size:34px}.offer-body p{color:var(--muted);line-height:1.65;margin:0}.offer-body .btn{margin-top:auto;width:100%;cursor:pointer}
+.offer-kit{grid-column:span 3}.offer-kit .offer-visual{aspect-ratio:16/7;background-size:400% 400%}
+.offer-modal[hidden]{display:none}.offer-modal{position:fixed;inset:0;z-index:120}
+.offer-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(5px)}
+.offer-panel{position:relative;z-index:1;width:min(920px,calc(100% - 28px));max-height:92vh;overflow:auto;margin:4vh auto;background:#fffaf3;border-radius:24px;display:grid;grid-template-columns:1.15fr .85fr;box-shadow:0 30px 90px rgba(0,0,0,.38)}
+.offer-modal-visual{min-height:520px;background-color:#f4e2d0}
+.offer-modal-copy{padding:34px;align-self:center}.offer-modal-copy h3{font-size:42px;line-height:1;margin:10px 0 16px}.offer-modal-copy p{color:var(--muted);line-height:1.7}
+.offer-close{position:absolute;right:14px;top:10px;z-index:2;width:42px;height:42px;border:0;border-radius:50%;background:rgba(0,0,0,.72);color:#fff;font-size:28px;cursor:pointer}
+@media(max-width:900px){.offers-grid{grid-template-columns:1fr 1fr}.offer-kit{grid-column:span 2}.offer-panel{grid-template-columns:1fr}.offer-modal-visual{min-height:420px}}
+@media(max-width:560px){.offers-grid{grid-template-columns:1fr}.offer-kit{grid-column:span 1}.offer-kit .offer-visual{aspect-ratio:1/1}.offer-modal-visual{min-height:300px}.offer-modal-copy{padding:24px}.offer-modal-copy h3{font-size:34px}}
