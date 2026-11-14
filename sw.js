@@ -1,10 +1,10 @@
-const CACHE='ddskin-v12';
+const CACHE='ddskin-v13';
 const CORE=[
   '/',
   '/index.html',
   '/styles.css',
   '/script.js',
-  '/manifest.webmanifest',
+  '/manifest.webmanifest','/robots.txt','/sitemap.xml',
   '/assets/ddskin-logo.jpeg',
   '/assets/ddskin-header.jpg','/assets/ddskin-home-hero-exact.jpg',
   '/assets/ddskin-offers-sprite.jpg',
