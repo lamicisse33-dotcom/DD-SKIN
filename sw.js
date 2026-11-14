@@ -1,4 +1,4 @@
-const CACHE='ddskin-v5';
+const CACHE='ddskin-v6';
 const CORE=[
   '/',
   '/index.html',
@@ -8,7 +8,7 @@ const CORE=[
   '/assets/ddskin-logo.jpeg',
   '/assets/ddskin-header.jpg',
   '/assets/ddskin-offers-sprite.jpg',
-  '/assets/ddskin-individual-sprite.jpg',
+  '/assets/huile-cocktail.jpg','/assets/gommage-papaye.jpg','/assets/lait-corps.jpg','/assets/creme-visage.jpg',
   '/teint-clair.html',
   '/teint-marron.html',
   '/teint-noir.html'
