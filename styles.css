@@ -231,3 +231,30 @@
   .individual-grid{display:grid!important;grid-template-columns:1fr!important;width:min(380px,100%)!important}
   .individual-card{width:auto!important;max-width:none!important;flex:none!important}
 }
+
+/* 5 soins individuels : gommages côte à côte et grille homogène */
+@media(min-width:1200px){
+  .individual-grid{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    width:min(1320px,100%)!important;
+    gap:18px!important;
+  }
+  .individual-card{width:auto!important;max-width:none!important;flex:none!important}
+}
+@media(min-width:800px) and (max-width:1199px){
+  .individual-grid{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    width:min(980px,100%)!important;
+    gap:18px!important;
+  }
+  .individual-card{width:auto!important;max-width:none!important;flex:none!important}
+}
+@media(min-width:561px) and (max-width:799px){
+  .individual-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    width:min(760px,100%)!important;
+  }
+}
