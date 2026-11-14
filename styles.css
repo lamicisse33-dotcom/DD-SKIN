@@ -85,3 +85,7 @@
 .crop-lait>img{left:0;top:-100%}
 .crop-creme>img{left:-100%;top:-100%}
 .individual-sprite{background-image:none!important}
+
+/* Images produits individuelles : fichiers directs, pas de sprite */
+.individual-photo{display:flex;align-items:center;justify-content:center;overflow:hidden;background:#f4e2d0}
+.individual-photo>img{position:static!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:cover!important;left:auto!important;top:auto!important}
