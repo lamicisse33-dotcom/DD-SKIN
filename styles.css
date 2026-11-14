@@ -61,3 +61,18 @@
   .offer-kit{grid-column:1;width:100%;max-width:400px;justify-self:center}
   .offer-kit .offer-visual{aspect-ratio:1/1}
 }
+
+/* Produits individuels : section compacte centrée entre nouveautés et catalogue existant */
+.individual-products{background:var(--ivory);padding-top:clamp(48px,6vw,78px);padding-bottom:clamp(48px,6vw,78px)}
+.individual-head{margin-left:auto;margin-right:auto;text-align:center}
+.individual-grid{width:min(1180px,100%);margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:stretch}
+.individual-card{background:#fff;border:1px solid #eadfce;border-radius:22px;overflow:hidden;box-shadow:0 14px 36px rgba(43,30,16,.07);display:flex;flex-direction:column;min-width:0}
+.individual-photo{aspect-ratio:1/1;width:100%;background-color:#f4e2d0;background-repeat:no-repeat}
+.individual-sprite{background-image:url('assets/ddskin-individual-sprite.jpg');background-size:200% 200%}
+.individual-huile{background-position:0% 0%}.individual-gommage{background-position:100% 0%}.individual-lait{background-position:0% 100%}.individual-creme{background-position:100% 100%}
+.individual-copy{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1;text-align:center}
+.individual-copy h3{font-size:28px;line-height:1.05}.individual-copy p{font-size:14px;line-height:1.55;color:var(--muted);margin:0}
+.individual-meta{font-size:12px;color:#8b7d6d;line-height:1.4}.individual-copy .price{margin:4px 0 6px}.individual-copy .btn{margin-top:auto;width:100%;padding:11px 14px;font-size:13px}
+@media(min-width:1500px){.individual-grid{width:min(1320px,100%);gap:22px}.individual-copy h3{font-size:30px}}
+@media(max-width:980px){.individual-grid{grid-template-columns:repeat(2,minmax(0,1fr));width:min(760px,100%)}}
+@media(max-width:560px){.individual-products{padding-left:14px;padding-right:14px}.individual-grid{grid-template-columns:1fr;width:min(360px,100%);gap:16px}.individual-copy{padding:16px}.individual-copy h3{font-size:27px}}
