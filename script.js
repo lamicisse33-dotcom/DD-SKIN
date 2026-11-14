@@ -39,3 +39,22 @@ if(!isStandalone){
   else if(isAndroid){show(androidInstallBtn)}
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
+
+const offerModal=document.getElementById('offerModal');
+const offerModalVisual=document.getElementById('offerModalVisual');
+const offerModalTitle=document.getElementById('offerModalTitle');
+const offerModalText=document.getElementById('offerModalText');
+const offerModalPrice=document.getElementById('offerModalPrice');
+const offerModalWhatsapp=document.getElementById('offerModalWhatsapp');
+function closeOfferModal(){if(offerModal)offerModal.hidden=true}
+document.querySelectorAll('.offer-open').forEach(btn=>btn.addEventListener('click',()=>{
+  if(!offerModal)return;
+  offerModalVisual.className='offer-modal-visual sprite '+btn.dataset.detail;
+  offerModalTitle.textContent=btn.dataset.title||'DD SKIN';
+  offerModalText.textContent=btn.dataset.text||'';
+  offerModalPrice.textContent=btn.dataset.price||'';
+  offerModalWhatsapp.href='https://wa.me/221781170287?text='+encodeURIComponent(btn.dataset.wa||'Bonjour DD SKIN, je souhaite commander.');
+  offerModal.hidden=false;
+}));
+document.querySelectorAll('[data-offer-close]').forEach(el=>el.addEventListener('click',closeOfferModal));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeOfferModal()});
