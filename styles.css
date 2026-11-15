@@ -264,3 +264,5 @@
   .individual-grid{display:grid;grid-template-columns:repeat(5,minmax(0,250px));justify-content:center}
   .individual-card{width:auto;max-width:250px}
 }
+
+.seo-h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(42px,5vw,66px);line-height:1;margin:12px 0 18px;font-weight:600}
