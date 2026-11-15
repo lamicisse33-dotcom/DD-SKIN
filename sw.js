@@ -1,4 +1,4 @@
-const CACHE='ddskin-v15';
+const CACHE='ddskin-v16';
 const CORE=[
   '/',
   '/index.html',
@@ -11,7 +11,7 @@ const CORE=[
   '/assets/huile-cocktail.jpg','/assets/gommage-papaye.jpg','/assets/gommage-cafe.jpg','/assets/lait-corps.jpg','/assets/creme-visage.jpg','/assets/mousse-nettoyante-visage.jpg',
   '/teint-clair.html',
   '/teint-marron.html',
-  '/teint-noir.html','/gommage-corps-dakar.html','/creme-visage-dakar.html'
+  '/teint-noir.html','/gommage-corps-dakar.html','/creme-visage-dakar.html','/mousse-nettoyante-visage-dakar.html','/lait-de-corps-dakar.html','/huile-cocktail-dakar.html'
 ];
 self.addEventListener('install',e=>{
   e.waitUntil(
