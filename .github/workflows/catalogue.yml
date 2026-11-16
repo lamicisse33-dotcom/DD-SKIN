@@ -1,0 +1,21 @@
+name: Catalogue produits (généré depuis index.html)
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'assets/**', 'scripts/generer-catalogue.mjs']
+permissions:
+  contents: write
+jobs:
+  generer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: node scripts/generer-catalogue.mjs
+      - name: Commit si le catalogue a changé
+        run: |
+          git config user.name "catalogue-bot"
+          git config user.email "catalogue@khalam.app"
+          git add catalogue.json
+          git diff --cached --quiet || (git commit -m "Catalogue : régénéré depuis index.html" && git push)
